@@ -1,0 +1,21 @@
+{
+  "name": "all_node_backend",
+  "version": "1.0.0",
+  "description": "manage all backend 2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "startok": "node index.js"
+  },
+  "author": "sourav.k",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^6.12.5",
+    "nodemon": "^3.0.2"
+  }
+}

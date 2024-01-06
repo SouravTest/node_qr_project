@@ -1,0 +1,1 @@
+mongosh      to start local mongodb and keet it runnig in terminal
