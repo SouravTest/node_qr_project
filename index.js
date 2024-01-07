@@ -3,14 +3,15 @@ const express = require("express");
 const app = express();
 const { connectMongoDb } = require("./connection");
 const { logReqRes } = require("./middlewares/log");
+var cookieParser = require('cookie-parser')
 
 const userRouter = require("./routes/userRoute");
 
 //Middlewares
 // app.use(logReqRes("log.txt"));
 app.use(express.json());
+app.use(cookieParser())
 app.use(express.urlencoded({ extended: true}))
-
 
 //Route
 app.get("/", (req, res) => {
